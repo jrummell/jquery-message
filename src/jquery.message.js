@@ -1,4 +1,4 @@
-﻿/*
+/*
     Message plugin for jQuery UI
     Copyright (c) 2010 John Rummell (jrummell.com)
     Licensed under the GPL license (http://www.gnu.org/licenses/gpl.html)
@@ -39,9 +39,9 @@
                     var iconClass = options.type == "info" ? "ui-icon-info" : "ui-icon-alert";
 
                     // build message html
-                    var messageHtml = "<div class=\"ui-widget message-container\">";
-                    messageHtml += "<div class=\"" + messageClass + " ui-corner-all\" style=\"padding: 0 .7em;\">";
-                    messageHtml += "<p><span class=\"ui-icon " + iconClass + "\" style=\"float:left; margin-right: .3em;\"></span>";
+                    var messageHtml = "<div class='ui-widget message-container'>";
+                    messageHtml += "<div class='" + messageClass + " ui-corner-all' >";
+                    messageHtml += "<p><span class='ui-icon " + iconClass + "' style='float:left;'></span>";
                     messageHtml += messageText;
                     if (options.dismiss)
                     {
