@@ -2,7 +2,7 @@
     Message plugin for jQuery UI
     Copyright (c) 2010 John Rummell (jrummell.com)
     Licensed under the GPL license (http://www.gnu.org/licenses/gpl.html)
-    Version: 1.0.3
+    Version: _VERSION_
 */
 
 //
