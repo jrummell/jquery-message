@@ -42,10 +42,10 @@
                     var messageHtml = "<div class='ui-widget message-container'>";
                     messageHtml += "<div class='" + messageClass + " ui-corner-all' >";
                     messageHtml += "<p><span class='ui-icon " + iconClass + "' style='float:left;'></span>";
-                    messageHtml += messageText;
+                    messageHtml += "<span class='message-text'>" + messageText + "</span>";
                     if (options.dismiss)
                     {
-                        messageHtml += " <span class='message-dismiss'>Click to dismiss.</span>";
+                        messageHtml += "<span class='message-dismiss'>Click to dismiss.</span>";
                     }
                     messageHtml += "</p></div></div>";
 
