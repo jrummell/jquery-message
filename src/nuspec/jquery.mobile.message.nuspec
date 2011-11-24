@@ -17,6 +17,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="..\js\jquery.mobile.message.js" target="content\Scripts"/>
+        <file src="..\js\jquery.mobile.message*.js" target="content\Scripts"/>
     </files>
 </package>
