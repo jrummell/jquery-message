@@ -1,63 +1,65 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/dot-luv/jquery-ui.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            .message-dismiss
-            {
-                font-weight: normal;
-                color: #999;
-            }
-            .message-container
-            {
-                padding: 0.5em;
-                line-height: 1em;
-            }
-            .message-container p
-            {
-                padding: 0 1em;
-            }
-            .message-container p .ui-icon
-            {
-                margin-right: .3em;
-            }
-        </style>
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-        <script type="text/javascript" src="../src/jquery.mobile.message.js"></script>
-        
-        <script type="text/javascript">
-            $(document).ready(function()
-            {
-                $("#message1").message();
-                $("#message2").message({type:"error"});
-                $("#message3").message({type:"info", message:"Here's an info message with dynamic content."});
-                $("#message4").message({dismiss: false});
-                $("#message5").message();
-                $("#message6").message({dismiss: false});
-                
-                $("#message5-button").click(function()
-                {
-                    $("#message5").message('options', {type:"error", message:"Error"});
-                });
-                
-                $("#message6-hide").click(function()
-                {
-                    $("#message6").message("hide");
-                });
-                
-                $("#message6-show").click(function()
-                {
-                    $("#message6").message("show");
-                });
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/dot-luv/jquery-ui.css" rel="stylesheet"
+          type="text/css"/>
+    <style type="text/css">
+        .message-dismiss {
+            padding-left: 0.5em;
+            font-weight: normal;
+            color: #999;
+        }
+
+        .message-container {
+            padding: 0.5em;
+            line-height: 1em;
+        }
+
+        .message-container p {
+            padding: 0 1em;
+        }
+
+        .message-container p .ui-icon {
+            margin-right: .3em;
+        }
+    </style>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.mobile.message.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#message1").message();
+            $("#message2").message({type:"error"});
+            $("#message3").message({type:"info", message:"Here's an info message with dynamic content."});
+            $("#message4").message({dismiss: false});
+            $("#message5").message();
+            $("#message6").message({dismiss: false});
+
+            $("#message5-button").click(function() {
+                $("#message5").message('options', {type:"error", message:"Error", theme: "e"});
             });
-        </script>
-    </head>
-    <body>
+
+            $("#message6-hide").click(function() {
+                $("#message6").message("hide");
+            });
+
+            $("#message6-show").click(function() {
+                $("#message6").message("show");
+            });
+        });
+    </script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>jQuery Mobile Message Plugin</h1>
+    </div>
+    <div data-role="content">
         <div id="message1">Here's an info message.</div>
         <div id="message2">Here's an error message.</div>
         <div id="message3"></div>
@@ -71,5 +73,10 @@
             <button id="message6-hide">Hide</button>
             <button id="message6-show">Show</button>
         </div>
-    </body>
+    </div>
+    <div data-role="footer">
+        <h4><a href="https://code.google.com/p/jquery-message/">Project Home</a></h4>
+    </div>
+</div>
+</body>
 </html>
