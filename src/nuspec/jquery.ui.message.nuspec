@@ -18,6 +18,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="..\js\jquery.ui.message.js" target="Scripts"/>
+        <file src="..\js\jquery.ui.message.js" target="content\Scripts"/>
     </files>
 </package>
