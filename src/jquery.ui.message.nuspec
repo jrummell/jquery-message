@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>jQuery.UI.Message</id>
+    <version>1.0</version>
+    <authors>John Rummell</authors>
+    <owners>John Rummell</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>http://code.google.com/p/jquery-message/</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple jQuery plugin that uses the jQuery UI highlight and error css classes to display info and error messages.</description>
+    <tags>jquery jQueryUI plugin message</tags>
+    <dependencies>
+      <dependency id="jQuery.UI.Core" version="1.8" />
+    </dependencies>
+  </metadata>
+</package>
