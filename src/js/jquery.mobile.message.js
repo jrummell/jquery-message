@@ -65,7 +65,11 @@
                     // set html and show the message
                     $this.html(messageHtml);
                     $this.find(".message-container").collapsible();
-                    $this.show();
+                    
+                    if (options.autoShow)
+                    {
+                        $this.show();
+                    }
 
                     // save options
                     $this.data("message", options);
@@ -127,6 +131,7 @@
         message: "", // leave blank to use element html
         type: "info", // info or error
         theme: null, // info or error theme
-        dismiss: true // append 'Click to dismiss' to message and hide on click
+        dismiss: true, // append 'Click to dismiss' to message and hide on click
+        autoShow: true // show on initialize
     };
 })(jQuery);
