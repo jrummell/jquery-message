@@ -14,7 +14,7 @@
         </description>
         <tags>jquery jQueryUI plugin message</tags>
         <dependencies>
-            <dependency id="jQuery.UI.Core" version="1.8"/>
+            <dependency id="jQuery.UI.Combined" version="1.8"/>
         </dependencies>
     </metadata>
     <files>
