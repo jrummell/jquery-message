@@ -1,6 +1,6 @@
 /*
     Message plugin for jQuery UI
-    Copyright (c) 2010 John Rummell (jrummell.com)
+    Copyright (c) 2012 John Rummell (jrummell.com)
     Licensed under the GPL license (http://www.gnu.org/licenses/gpl.html)
     Version: _VERSION_
 */
@@ -45,21 +45,22 @@
                     messageHtml += "<span class='message-text'>" + messageText + "</span>";
                     if (options.dismiss)
                     {
-                        messageHtml += "<span class='message-dismiss'>Click to dismiss.</span>";
+                        messageHtml += "<a class='message-dismiss' href='#'>Dismiss</a>";
                     }
                     messageHtml += "</p></div></div>";
+
+                    // set html and show the message
+                    $this.html(messageHtml);
 
                     if (options.dismiss)
                     {
                         // hide messages on click
-                        $this.click(function ()
+                        jQuery(".message-dismiss", $this).click(function ()
                         {
-                            jQuery(this).hide('normal');
+                            $this.hide('normal');
+                            return false;
                         });
                     }
-
-                    // set html and show the message
-                    $this.html(messageHtml);
                     
                     if (options.autoShow)
                     {

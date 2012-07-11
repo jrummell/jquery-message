@@ -1,1 +1,3 @@
 glob:demo/robots.txt
+syntax: glob
+jquery-message.suo
