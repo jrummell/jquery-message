@@ -10,7 +10,7 @@
         .message-dismiss {
             padding-left: 0.5em;
             font-weight: normal;
-            color: #999;
+            color: #777 !important;
         }
 
         .message-container {
@@ -28,6 +28,11 @@
 
         .ui-widget-header {
             text-align: center;
+        }
+
+        .button-example {
+            border: 1px solid #999;
+            margin: .5em 0;
         }
 
     </style>
@@ -55,6 +60,8 @@
             $("#message6-show").click(function() {
                 $("#message6").message("show");
             });
+
+            $("button").button();
         });
     </script>
 </head>
@@ -68,11 +75,11 @@
         <div id="message2">Here's an error message.</div>
         <div id="message3"></div>
         <div id="message4">Here's an info message without dismiss.</div>
-        <div>
+        <div class="button-example ui-widget ui-corner-all">
             <div id="message5">Click the following button to change this to an error.</div>
             <button id="message5-button">Change to Error</button>
         </div>
-        <div>
+        <div class="button-example ui-widget ui-corner-all">
             <div id="message6">Click the following buttons to show or hide.</div>
             <button id="message6-hide">Hide</button>
             <button id="message6-show">Show</button>

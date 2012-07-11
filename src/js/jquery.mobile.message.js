@@ -1,6 +1,6 @@
 /*
     Message plugin for jQuery Mobile
-    Copyright (c) 2011 John Rummell (jrummell.com)
+    Copyright (c) 2012 John Rummell (jrummell.com)
     Licensed under the GPL license (http://www.gnu.org/licenses/gpl.html)
     Version: _VERSION_
 */
@@ -49,22 +49,23 @@
                     messageHtml += "<p><span class='message-text'>" + messageText + "</span>";
                     if (options.dismiss)
                     {
-                        messageHtml += "<span class='message-dismiss'>Click to dismiss.</span>";
+                        messageHtml += "<a class='message-dismiss' href='#'>Dismiss</a>";
                     }
                     messageHtml += "</p></div>";
-
-                    if (options.dismiss)
-                    {
-                        // hide messages on click
-                        $this.click(function ()
-                        {
-                            jQuery(this).hide('normal');
-                        });
-                    }
 
                     // set html and show the message
                     $this.html(messageHtml);
                     $this.find(".message-container").collapsible();
+
+                    if (options.dismiss)
+                    {
+                        // hide messages on click
+                        jQuery(".message-dismiss", $this).click(function ()
+                        {
+                            $this.hide('normal');
+                            return false;
+                        });
+                    }
                     
                     if (options.autoShow)
                     {
