@@ -31,7 +31,6 @@
                     if (messageText == null || messageText == "")
                     {
                         messageText = $this.html();
-                        options.message = messageText;
                     }
 
                     // info or error?
