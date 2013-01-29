@@ -1,0 +1,33 @@
+{
+    "name": "message",
+    "title": "jQuery UI Message",
+    "description": "Info and error message boxes styled with jQuery UI.",
+    "keywords": [
+        "message"
+    ],
+    "version": "1.7.2",
+    "author": {
+        "name": "John Rummell",
+        "url": "http://code.google.com/p/jquery-message/people/list"
+    },
+    "maintainers": [
+        {
+            "name": "John Rummell",
+            "url": "http://jrummell.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPLv3",
+            "url": "http://www.gnu.org/licenses/gpl.html"
+        }
+    ],
+    "bugs": "http://code.google.com/p/jquery-message/issues/list",
+    "homepage": "http://code.google.com/p/jquery-message",
+    "docs": "http://code.google.com/p/jquery-message/wiki/Usage",
+    "demo": "http://jquery-message.googlecode.com/hg/demo/ui.html",
+    "dependencies": {
+        "jquery": ">=1.6",
+        "jquery.ui": ">=1.8"
+    }
+}
