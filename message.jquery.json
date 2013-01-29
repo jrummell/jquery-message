@@ -1,21 +1,17 @@
 {
     "name": "message",
     "title": "jQuery UI Message",
-    "description": "Info and error message boxes styled with jQuery UI.",
+    "description": "Info and error message boxes styled with jQuery UI and jQuery Mobile.",
     "keywords": [
-        "message"
+        "message",
+        "ui",
+        "mobile"
     ],
     "version": "1.7.2",
     "author": {
         "name": "John Rummell",
-        "url": "http://code.google.com/p/jquery-message/people/list"
+        "url": "http://jrummell.com"
     },
-    "maintainers": [
-        {
-            "name": "John Rummell",
-            "url": "http://jrummell.com"
-        }
-    ],
     "licenses": [
         {
             "type": "GPLv3",
