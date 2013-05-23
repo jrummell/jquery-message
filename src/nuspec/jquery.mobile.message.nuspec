@@ -18,5 +18,6 @@
     </metadata>
     <files>
         <file src="..\js\jquery.mobile.message*.js" target="content\Scripts"/>
+        <file src="..\css\jquery.mobile.message*.css" target="content\Content"/>
     </files>
 </package>

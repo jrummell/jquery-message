@@ -3,3 +3,5 @@ syntax: glob
 *.suo
 *.user
 .git*
+*.nupkg
+.nuget
