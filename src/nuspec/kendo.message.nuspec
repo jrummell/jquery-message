@@ -14,7 +14,7 @@
         </description>
         <tags>jquery kendo plugin message</tags>
         <dependencies>
-            <dependency id="KendoUIWeb" />
+            <dependency id="KendoUICore" />
         </dependencies>
     </metadata>
     <files>
