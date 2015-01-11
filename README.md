@@ -14,6 +14,6 @@ http://nuget.org/List/Packages/Kendo.Message
 
     PM> Install-Package Kendo.Message
 
-http://jquery-message.googlecode.com/hg/demo/screen.png
+![](https://raw.githubusercontent.com/jrummell/jquery-message/master/demo/screen.png)
 
-[[Usage]]
+[Usage](https://github.com/jrummell/jquery-message/wiki/Usage)
