@@ -1,7 +1,19 @@
-jquery-message
-==============
+Simple jQuery UI and jQuery Mobile plugins that display info and error messages.
 
-Info and error message boxes styled with jQuery UI and jQuery Mobile.
+You can install with NuGet:
 
-This repo is a clone for publishing to plugins.jquery.com. 
-See http://code.google.com/p/jquery-message for source, docs, issues and demos.
+http://nuget.org/List/Packages/jQuery.UI.Message
+
+    PM> Install-Package jQuery.UI.Message
+
+http://nuget.org/List/Packages/jQuery.Mobile.Message
+
+    PM> Install-Package jQuery.Mobile.Message
+
+http://nuget.org/List/Packages/Kendo.Message
+
+    PM> Install-Package Kendo.Message
+
+http://jquery-message.googlecode.com/hg/demo/screen.png
+
+[[Usage]]
