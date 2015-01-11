@@ -16,4 +16,4 @@ http://nuget.org/List/Packages/Kendo.Message
 
 ![](https://raw.githubusercontent.com/jrummell/jquery-message/master/demo/screen.png)
 
-[Usage](https://github.com/jrummell/jquery-message/wiki/Usage)
+[Usage](https://github.com/jrummell/jquery-message/wiki)
