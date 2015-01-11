@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/redmond/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../src/css/jquery.ui.message.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript" src="../src/js/jquery.ui.message.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#message1").message();
+            $("#message2").message({ type: "error" });
+            $("#message3").message({ type: "info", message: "Here's an info message with dynamic content." });
+            $("#message4").message({ dismiss: false });
+            $("#message5").message();
+            $("#message6").message({ dismiss: false });
+
+            $("#message5-button").click(function () {
+                $("#message5").message('options', { type: "error", message: "This is now an error message." });
+            });
+
+            $("#message6-hide").click(function () {
+                $("#message6").message("hide");
+            });
+
+            $("#message6-show").click(function () {
+                $("#message6").message("show");
+            });
+
+            $(".info-message").message();
+
+            $("button").button();
+
+            $("fieldset").addClass("ui-widget ui-corner-all");
+        });
+    </script>
+</head>
+<body class="ui-helper-reset">
+    <div class="ui-widget">
+        <div class="ui-widget-header ui-corner-top">
+            <h2>
+                jQuery UI Message Plugin</h2>
+        </div>
+        <div class="ui-widget-content">
+            <div id="message1">
+                Here's an info message.</div>
+            <div id="message2">
+                Here's an error message.</div>
+            <div id="message3">
+            </div>
+            <div id="message4">
+                Here's an info message without dismiss.</div>
+            <fieldset>
+                <legend>Change Options</legend>
+                <div id="message5">
+                    Click the following button to change this to an error.</div>
+                <button id="message5-button">
+                    Change to Error</button>
+            </fieldset>
+            <fieldset>
+                <legend>Show/Hide</legend>
+                <div id="message6">
+                    Click the following buttons to show or hide.</div>
+                <button id="message6-hide">
+                    Hide</button>
+                <button id="message6-show">
+                    Show</button>
+            </fieldset>
+            <fieldset>
+                <legend>Two messages initialized at the same time</legend>
+                <div class="info-message">
+                    Info message with class 'info-message' 1.</div>
+                <div class="info-message">
+                    Info message with class 'info-message' 2.</div>
+            </fieldset>
+        </div>
+        <div class="ui-widget-header ui-corner-bottom">
+            <a href="https://code.google.com/p/jquery-message/">Project Home</a>
+        </div>
+    </div>
+</body>
+</html>
