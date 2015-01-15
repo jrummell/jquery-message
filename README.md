@@ -1,4 +1,4 @@
-Simple jQuery UI and jQuery Mobile plugins that display info and error messages.
+Simple jQuery plugins that display info and error messages.
 
 You can install with NuGet:
 
@@ -13,6 +13,10 @@ http://nuget.org/List/Packages/jQuery.Mobile.Message
 http://nuget.org/List/Packages/Kendo.Message
 
     PM> Install-Package Kendo.Message
+
+http://nuget.org/List/Packages/Bootstrap.Message
+
+    PM> Install-Package Bootstrap.Message
 
 ![](https://raw.githubusercontent.com/jrummell/jquery-message/master/demo/screen.png)
 
