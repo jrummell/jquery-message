@@ -41,28 +41,19 @@
                     var messageHtml = "<div class='message-container'>";
                     messageHtml += "<div class='alert " + messageClass + " alert-dismissible' >";
                     messageHtml += "<div class='row'>";
-                    messageHtml += "<div class='col-md-2'><span class='glyphicon pull-left " + iconClass + "' aria-hidden='true'></span></div>";
-                    messageHtml += "<div class='col-md-10 message-text'><p>" + messageText;
+                    messageHtml += "<div class='col-md-1'><span class='glyphicon pull-left " + iconClass + "' aria-hidden='true'></span></div>";
+                    messageHtml += "<div class='col-md-11 message-text'>";
                     if (options.dismiss)
                     {
-                        messageHtml += "<a class='message-dismiss' href='#'>Dismiss</a>";
+                        messageHtml += "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>";
                     }
+                    messageHtml += "<p>" + messageText;
                     messageHtml += "</p>";
                     messageHtml += "</div></div></div></div>";
 
                     // set html and show the message
                     $this.html(messageHtml);
 
-                    if (options.dismiss)
-                    {
-                        // hide messages on click
-                        jQuery(".message-dismiss", $this).click(function ()
-                        {
-                            $this.hide('normal');
-                            return false;
-                        });
-                    }
-                    
                     if (options.autoShow)
                     {
                         $this.show();
