@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,30 +10,7 @@
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <script type="text/javascript" src="../src/js/jquery.mobile.message.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#message1").message();
-            $("#message2").message({ type: "error" });
-            $("#message3").message({ type: "info", message: "Here's an info message with dynamic content." });
-            $("#message4").message({ dismiss: false });
-            $("#message5").message();
-            $("#message6").message({ dismiss: false });
-
-            $("#message5-button").click(function () {
-                $("#message5").message('options', { type: "error", theme: "e", message: "This is now an error message." });
-            });
-
-            $("#message6-hide").click(function () {
-                $("#message6").message("hide");
-            });
-
-            $("#message6-show").click(function () {
-                $("#message6").message("show");
-            });
-
-            $(".info-message").message();
-        });
-    </script>
+    <script type="text/javascript" src="demo.js"></script>
 </head>
 <body>
     <div data-role="page">
