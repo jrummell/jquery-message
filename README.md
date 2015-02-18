@@ -1,4 +1,8 @@
+# jQuery Message
+
 Simple jQuery plugins that display info and error messages.
+
+[![Build status](https://ci.appveyor.com/api/projects/status/0tq5x9vo4iffajsr?svg=true)](https://ci.appveyor.com/project/jrummell/jquery-message)
 
 You can install with NuGet:
 
