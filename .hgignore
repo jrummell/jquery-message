@@ -1,7 +1,0 @@
-glob:demo/robots.txt
-syntax: glob
-*.suo
-*.user
-.git*
-*.nupkg
-.nuget
