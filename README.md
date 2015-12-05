@@ -1,3 +1,10 @@
+## _This project is no longer maintained_ 
+
+See the following active projects instead:
+
+- [kendo.message](https://github.com/jrummell/kendo.message)
+- [bootstrap.message](https://github.com/jrummell/bootstrap.message)
+
 # jQuery Message
 
 Simple jQuery plugins that display info and error messages.
